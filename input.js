@@ -14,6 +14,12 @@ const handleUserInput = function (data) {
     conn.write('Move: right');
   } else if (data === '\u0003') {
     process.exit();
+  } else if (data === '1') {
+    conn.write('Say: Hellooo');
+  } else if (data === '2') {
+    conn.write('Say: Yes');
+  } else if (data === '3') {
+    conn.write('Say: No');
   }
 };
 
