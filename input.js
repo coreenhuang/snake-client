@@ -29,3 +29,5 @@ const setupInput = function () {
 };
 
 module.exports = {setupInput};
+
+// steps from Compass' WASD Movement challenge disregarded as code works fine without it, code here is more simplified and still effective
