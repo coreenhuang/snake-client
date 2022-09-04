@@ -13,17 +13,6 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
     conn.write("Name: CH");
-
-    // conn.write("Move: up");
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 1000)
-  
-    // setInterval(() => {
-    //   conn.write("Move: up");
-    // }, 1000)
-
   });
 
   conn.on("data", () => {
@@ -34,3 +23,15 @@ const connect = function () {
 };
 
 module.exports = {connect};
+
+// test code below within connect function
+
+// conn.write("Move: up");
+
+// setTimeout(() => {
+//   conn.write("Move: up");
+// }, 1000)
+
+// setInterval(() => {
+//   conn.write("Move: up");
+// }, 1000)
